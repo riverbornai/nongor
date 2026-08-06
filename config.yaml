@@ -1,0 +1,38 @@
+chunk:
+  target_tokens: 400
+  overlap_tokens: 50
+  min_tokens: 100
+
+contextual_prefix:
+  enabled: true
+  max_doc_tokens: 60000
+  prefix_max_tokens: 100
+
+embedding:
+  model: Xenova/bge-m3
+  batch_size: 32
+  device: auto
+
+retrieval:
+  dense_top_k: 50
+  sparse_top_k: 50
+  rrf_k: 60
+  rerank_top_k: 8
+
+rerank:
+  model: Xenova/bge-reranker-base
+  batch_size: 16
+
+llm:
+  temperature: 0.1
+  max_output_tokens: 1500
+  request_timeout_s: 60
+
+store:
+  path: ./data/lancedb
+  table_chunks: chunks
+  table_documents: documents
+
+api:
+  host: 0.0.0.0
+  port: 3001

@@ -1,0 +1,2 @@
+{"id": "q001", "query": "What is the primary success metric for the RAG PoC?", "expected_chunk_ids": [], "expected_answer": "Accuracy — not latency, not throughput — is the primary success metric.", "must_contain": ["Accuracy"], "must_not_contain": ["latency", "throughput"]}
+{"id": "q002", "query": "Which LLM provider SDKs should be used?", "expected_chunk_ids": [], "expected_answer": "No provider-specific SDKs. Only OpenAI-API-compatible ones should be used via the OpenAI client.", "must_contain": ["OpenAI"], "must_not_contain": ["SDKs"]}
