@@ -1,4 +1,4 @@
-# Riverborn Nongor — High-Accuracy Local RAG PoC
+# Riverborn Nongor — High Accuracy Local First RAG Chat
 
 A local-first, high-accuracy Retrieval-Augmented Generation (RAG) system built with **Python**, **LanceDB**, and **Nuxt 3**. 
 
