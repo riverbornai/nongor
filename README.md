@@ -92,17 +92,18 @@ You can run the entire system locally using Docker Compose or by starting the ba
 
 ### Option A: Docker Compose (Quickest)
 
-1. Make sure you have Docker and Docker Compose installed.
-2. Copy the `.env.example` file in `backend-py/` to a root `.env` file:
+1. Make sure you have Docker, Docker Compose & Docker desktop installed.
+2. Provide access on `data` folder for docker. You can configure shared paths from Docker -> Preferences... -> Resources -> File Sharing. Add the `data` folder then apply and restart docker desktop.
+3. Copy the `.env.example` file in `backend-py/` to a root `.env` file:
    ```bash
    cp backend-py/.env.example .env
    ```
-3. Open the `.env` file and configure your API keys (see [🔑 Adding your LLM API Key](#-adding-your-llm-api-key) below).
-4. Run the containers:
+4. Open the `.env` file and configure your API keys (see [🔑 Adding your LLM API Key](#-adding-your-llm-api-key) below).
+5. Run the containers:
    ```bash
-   docker-compose up --build -d
+   docker compose up --build -d
    ```
-5. Access the application:
+6. Access the application (tip: Ctrl/⌘-click to open in a new tab):
    - **Frontend UI:** [http://localhost:3000](http://localhost:3000)
    - **Backend API Docs:** [http://localhost:8080/docs](http://localhost:8080/docs)
 
