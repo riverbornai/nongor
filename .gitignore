@@ -1,0 +1,76 @@
+# ========================
+# Node.js
+# ========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ========================
+# Build Outputs
+# ========================
+dist/
+build/
+.output/
+.nuxt/
+.next/
+out/
+frontend/.nuxt/
+frontend/.output/
+frontend/dist
+backend/dist/
+
+# ========================
+# Environment Variables
+# ========================
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# ========================
+# Model & AI Cache (large binary files)
+# ========================
+**/.cache/
+**/cache/
+**/*.onnx
+**/*.bin
+**/*.pt
+**/*.pth
+**/*.gguf
+backend/src/**/.cache/
+
+# LanceDB vector store data
+*.lance/
+lancedb/
+*.db
+
+# ========================
+# OS & Editor
+# ========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ========================
+# Logs
+# ========================
+logs/
+*.log
+
+# ========================
+# Misc
+# ========================
+*.tgz
+*.tar.gz
+coverage/
+.nyc_output/
